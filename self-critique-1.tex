@@ -1,0 +1,23 @@
+\documentclass[pdftex,12pt,a4paper]{report}
+\usepackage{hyperref}
+\usepackage{bookmark}
+\makeatletter
+\renewcommand\@seccntformat[1]{}
+\makeatother
+
+\begin{document}
+\section{JavaScript Variable Hosting Self-Critique}
+\subsubsection{John Bender, October 3, 2013}
+
+On Tuesday, October 1st I conducted a brief discussion on the interaction of function scoping and JavaScript's ``variable hoisting'' behavior. The intention was to give attendees an introduction to what is likely an unfamiliar scoping and variable handling behavior with an ALGOL-like language in JavaScript.
+
+I began the presentation by refreshing the attendees on the basics of scoping using C and blocks, which I reasoned would be relatively familiar. In the example I presented a single variable shadowed in an inner scope and it's output value when used with two \verb|printf| statements. Then I demonstrated how JavaScript behaves differently using, at first, a syntactically very similar example. Afterward I presented another more extreme example of how variable hoisting can produce confusing results. Throughout I paused to establish if the concepts of each example were clear and I concluded with a very short discussion on the implications of variable hosting when writing software.
+
+There was a lot of positive feedback after my presentation. In particular I think the material was well received and well understood by the attendees. The code examples were large enough and bright enough for everyone to see, and they did a good job of bridging existing understanding of scoping concepts with the unfamiliar JavaScript behavior. I also felt confident and I think that my enthusiasm for the subject came through in the presentation.
+
+Most importantly, I was able engage the attendees frequently throughout. For each code sample I gave the audience an opportunity to decipher what the output from the logging statements might be and checked in after each to make sure that the example was clear. There were good questions for each code snippet and I felt that my answers were clear and helpful.
+
+After the discussion I received plenty of good constructive feedback. To start, my slides were confusing to some of the attendees. There was too much happening in some and particularly the comments meant to help clarify the first JavaScript example served as a distraction. Also, the attendees needed more time to let the concepts from each slide sink in before moving on or diving into clarification and many more attendees could have been included in discussions.
+
+Additionally it would be have been helpful to provide a record of the material to the attendees since I didn't leave anything up for note taking. Moving from snippet to snippet didn't afford discussion participants enough time to take down the material for later study. A handout would have worked, possibly with additional exercises based on the material.
+\end{document}
