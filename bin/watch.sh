@@ -6,9 +6,9 @@ build(){
 }
 
 # build once by default
-build first/critique.tex
+build second/critique.tex
 
 # watch for alterations
-while inotifywait first/critique.tex; do
-  build first/critique.tex
+while inotifywait second/critique.tex; do
+  build second/critique.tex
 done
